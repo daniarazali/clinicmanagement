@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clinical Management System</h1>
+    </header>
+
+    <main>
+        <!-- Patient Registration Form -->
+        <section>
+            <h2>Patient Registration</h2>
+            <form id="registration-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                <button type="submit">Register</button>
+            </form>
+            <p id="registration-message"></p>
+        </section>
+
+        <!-- Appointment Scheduling -->
+        <section>
+            <h2>Schedule Appointment</h2>
+            <form id="appointment-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <label for="service">Service:</label>
+                <input type="text" id="service" required>
+                <button type="submit">Schedule</button>
+            </form>
+            <p id="appointment-message"></p>
+        </section>
+
+        <!-- Doctor's Consultation -->
+        <section>
+            <h2>Consultation</h2>
+            <button id="prescription-btn">Generate Prescription</button>
+            <button id="close-btn">Close Appointment</button>
+            <p id="consultation-message"></p>
+        </section>
+
+        <!-- Payment Processing -->
+        <section>
+            <h2>Payment</h2>
+            <button id="payment-btn">Process Payment</button>
+            <p id="payment-message"></p>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
